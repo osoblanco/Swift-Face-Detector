@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaceDetetction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wikipedia Face Detector" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WY-bc-8NU">
+                                <rect key="frame" x="203" y="28" width="195" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="rqp-Od-cx8"/>
+                                    <constraint firstAttribute="height" constant="21" id="xop-fQ-LCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="0.94124323129653931" green="0.4975547194480896" blue="0.12340611964464188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.43921568630000002" green="0.63921568630000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write the name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m5I-TG-jEk">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ls-jj-UL4">
+                                <rect key="frame" x="200" y="128" width="200" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VBH-tK-scC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ls-jj-UL4" firstAttribute="top" secondItem="m5I-TG-jEk" secondAttribute="bottom" constant="14" id="Akz-gp-Khb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Ls-jj-UL4" secondAttribute="bottom" constant="222" id="DDT-9g-cEZ"/>
+                            <constraint firstItem="m5I-TG-jEk" firstAttribute="top" secondItem="2WY-bc-8NU" secondAttribute="bottom" constant="35" id="KHn-6Q-0u1"/>
+                            <constraint firstItem="2WY-bc-8NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Rtb-Yb-WoV"/>
+                            <constraint firstItem="m5I-TG-jEk" firstAttribute="centerX" secondItem="5Ls-jj-UL4" secondAttribute="centerX" id="S7C-aa-zDE"/>
+                            <constraint firstItem="m5I-TG-jEk" firstAttribute="centerX" secondItem="2WY-bc-8NU" secondAttribute="centerX" id="Xo4-p5-HpI"/>
+                            <constraint firstItem="m5I-TG-jEk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iqQ-hn-b1Q"/>
+                            <constraint firstItem="m5I-TG-jEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wsU-5h-QKV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="celebImageView" destination="5Ls-jj-UL4" id="7Zy-eA-oDX"/>
+                        <outlet property="nameTextfield" destination="m5I-TG-jEk" id="hKQ-Ke-glX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="345"/>
+        </scene>
+    </scenes>
+</document>
